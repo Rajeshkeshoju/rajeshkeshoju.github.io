@@ -7,7 +7,7 @@
 
 #header{
     height: auto;
-    width: fit-content  ;
+    width: max-content  ;
 
     background-color:blue;
     color: white;
