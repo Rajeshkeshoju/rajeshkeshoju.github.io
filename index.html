@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="css/style.css"/>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <script type="javascript" src="js/backToTop.js"></script>
     </head>
 
     <body>
@@ -73,25 +75,3 @@
         <!--Footer-->
     </body>
 </html>
-
-
-<!-- JS Script-->
-    <script>
-        topButton = document.getElementById("topBtn")
-        window.onscroll = function(){scrollFunction()}
-
-        function scrollFunction(){
-            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
-                topButton.style.display="block"
-            }else{
-                topButton.style.display = "none"
-            }
-        }
-
-
-        function backToTop(){
-            document.body.scrollTop =0;
-            document.documentElement.scrollTop = 0
-        }
-    </script>
-<!-- JS Script-->
