@@ -1,5 +1,5 @@
 
-topButton = document.getElementsByClassName("arrow")
+topButton = document.getElementById("topBtn")
 window.onscroll = function(){scrollFunction()}
 
 function scrollFunction(){
