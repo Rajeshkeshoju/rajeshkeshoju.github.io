@@ -11,9 +11,7 @@
 
 #header{
     float: left;
-    overflow: hidden;
     width: fit-content;
-    padding: 10px;
 
     color: white;
     font-size: 24px;
@@ -21,27 +19,22 @@
 }
 
 #header-nav{
+    height: fit-content;
+    width: fit-content;
     overflow: hidden;
     position: relative;
 }
 
 #header-nav a{
-    overflow: hidden;
+    float: left;
     text-align: center;
-    padding: 14px 16px;
-    font-size: 18px;
+    padding: 12px 14px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 #header-nav a:hover{
-    border-radius: 4px;
-    border: 1px solid white;
     color: #f64c72;
-}
-
-#header-nav a.active{
-    color: black;
-    background-color: #f64c72;
 }
 
 ul li{
@@ -70,8 +63,8 @@ a:hover{
     text-align: center;
     height: auto;
     width: max-content;
-    border: 2px solid #f64c72;
-    border-radius: 6px;
+    border: 1px solid #f64c72;
+    border-radius: 4px;
     font-weight: bold;
     transition: .4s;
     box-shadow: 0 1px 2px 0 rgb(0,0,0,0.26);
@@ -89,30 +82,27 @@ a:hover{
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
-    z-index: 99;
+    right: 20px;
     border: none;
-    outline: none;
     background-color: #f64c72;
-    color: wheat;
     cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgb(0,0,0,0.26);
+    text-align: center;
 }
 
-.arrow{
-    border: solid black;
+.arrow-up{
+    border: solid white;
     border-width:  0 3px 3px 0;
     display: inline-block;
     padding: 3px;
-    color: white;
-}
+    background-color: transparent;
 
-.up{
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
+
 
 input,select,textarea{
     width: 100%;
@@ -127,6 +117,7 @@ input,select,textarea{
 }
 
 #contact{
+    display: none;
     width: fit-content;
     align-self: center;
     border-radius: 5px;
@@ -152,8 +143,5 @@ input,select,textarea{
 }
 
 #footer{
-    height: auto;
-    width: 100% ;
-    position: relative ;
     text-align: center;
 }
