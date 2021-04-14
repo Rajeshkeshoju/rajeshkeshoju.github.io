@@ -1,48 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Rajesh Keshoju :: Developer</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
         <meta content="utf-8" http-equiv="encoding">
 
-        <link rel="stylesheet" href="css/style.css"/>
+       <!--<link rel="stylesheet" href="css/style.css"/>--> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
         <script type="text/javascript" src="js/responsive.js"></script>
+
+        <style>
+            .material-icons {vertical-align:-14%}
+        </style>
     </head>
 
     <body>
         <!--Header-->
-        <div style="padding: 1%;">
-
-
-            <div align="center">
-                <h3 id="header">Rajesh Keshoju</h3>
+        <div  class="w3-container w3-card w3-teal w3-border w3-center">
+            <div class="w3-text-white">
+                <h3 class="w3-cursive w3-xxlarge">Rajesh Keshoju</h3>
             </div>
 
             <br>
 
-            <div align="center"  class="header-nav" id="topnav">
-                    </li><a href="#">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#social-link">Contact</a>
-                    <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
+            <div class="w3-bar" id="topnav">
+                    </li><a href="#" class="w3-button w3-border w3-bar-item w3-hover-blue w3-mobile w3-blue">Home</a>
+                    <a href="#about" class="w3-button w3-border w3-bar-item w3-hover-deep-orange w3-mobile">About</a>
+                    <a href="#projects" class="w3-button w3-border w3-bar-item w3-hover-yellow w3-mobile">Projects</a>
+                    <a href="#social-link" class="w3-button w3-border w3-bar-item w3-hover-pink w3-mobile">Contact</a>
+                    <!-- <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
                         <div class="nav-bar"></div>
                         <div class="nav-bar"></div>
                         <div class="nav-bar"></div>
-                    </a>
+                    </a> -->
             </div>
         </div>
 
-        <hr size="1"> 
         <!--Header-->
 
-
         <!--About-->
-            <div>
+            <div class="w3-animate-bottom w3-padding">
                 <h2 class="heading">About me</h2>
 
                 <p>A student developer who loves to code</p>
@@ -73,33 +77,32 @@
 
 
         <!--Contact form-->
-            <div id="contact">
+            <div class="w3-container w3-card w3-border w3-animate-bottom w3-padding">
 
                 <h1 class="heading">Contact</h1>
                 
                 <form action="index.html" method="POST">
-                    <label for="Name">Name</label>
-                    <input type="text" id="Name" name="Name" placeholder="Name" required>
+                    <label class="w3-text-black"><b>Name</b></label>
+                    <input class="w3-input w3-border" type="text" id="Name" name="Name" placeholder="Name" required>
 
-                    <label for="Email">Email</label>
-                    <input type="email" id="Email" name="Email" placeholder="Email" required>
+                    <label class="w3-text-black"><b>Email</b></label>
+                    <input class="w3-input w3-border" type="email" id="Email" name="Email" placeholder="Email" required>
 
-                    <label for="Message">Message</label>
-                    <textarea rows="10" id="Message" placeholder="Write something..." required></textarea>
-                    <input type="submit" name="Submit" value="Submit" id="btn">
+                    <label class="w3-text-black"><b>Message</b></label>
+                    <textarea class="w3-input w3-border" rows="10" id="Message" placeholder="Write something..." required></textarea>
+                    <input class="w3-btn w3-green w3-hover-blue" type="submit" name="Submit" value="Submit" id="btn">
                 </form>
             </div>
         <!--Contact Form-->
 
         
-        <nav>
-            <ul id="social-link">
-                <li><a href="https://github.com/Rajeshkeshoju/" class="fa fa-github" style="background-color: #333;"></a></li>
-                <li><a href="https://in.linkedin.com/in/rajesh-keshoju-847a50175" class="fa fa-linkedin" style="background-color: #0e76a8 ;"></a></li>
-                <li><a href="https://instagram.com/rajeshkeshoju" class="fa fa-instagram" style="background-color: #e95950; "></a></li>
-                <li><a href="https://twitter.com/rajeshkeshoju" class="fa fa-twitter" style="background-color: #00acee;"></a></li>
-            </ul>
-        </nav>
+        
+        <ul class="w3-ul">
+            <li><a href="https://github.com/rajeshkeshoju/"><i class="material-icons">github</i></a></li>
+            <li><a href="https://in.linkedin.com/in/rajeshkeshoju"><i class="material-icons">linkedin</i></a></li>
+            <li><a href="https://instagram.com/rajeshkeshoju"><i class="material-icons">instagram</i></a></li>
+            <li><a href="https://twitter.com/rajeshkeshoju"><i class="material-icons">twitter</i></a></li>
+        </ul>
 
         <hr size="1">
 
@@ -108,8 +111,8 @@
         </button>
 
         <!-- Footer-->
-            <footer id="footer">
-                <h4>Designed & Developed by <a href="https://linktr.ee/rajeshkeshoju/">Rajesh Keshoju</a></h4>
+            <footer class="w3-container w3-center w3-card w3-teal">
+                <h4>Designed & Developed by <a href="https://linktr.ee/rajeshkeshoju/" class="w3-cursive w3-xlarge w3-hover-yellow">Rajesh Keshoju</a></h4>
             </footer>
         <!--Footer-->
     </body>
